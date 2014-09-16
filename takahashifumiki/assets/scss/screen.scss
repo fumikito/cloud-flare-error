@@ -1,0 +1,110 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+
+.bg{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+html, body{
+  height: 100%;
+  position: relative;
+  background-color: #394756;
+  overflow-x: hidden;
+}
+
+.wrap{
+  position: relative;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  z-index: 2;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+h1, h3{
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 0px 3px #000;
+  font-family: sans-serif;
+}
+p{
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  font-family: sans-serif;
+  margin: 60px auto;
+  max-width: 760px;
+}
+ul{
+  font-size: 14px;
+  max-width: 760px;
+  margin: 20px auto;
+  padding: 20px 20px 20px 2em;
+  border-top: 1px dotted #fff;
+  li{
+    margin: 0.5em;
+    list-style: outside disc;
+    color: #fff;
+  }
+}
+address{
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Georgia', serif;
+}
+#spinner{
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fff;
+}
+.cf_reload_button,
+.cf-captcha-submit{
+  display: block;
+  width: 300px;
+  text-align: center;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  border: 3px solid #fff;
+  margin: 20px auto;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  &:link{
+    text-decoration: none;
+  }
+  &:hover{
+    background-color: #ddd;
+  }
+}
+div#recaptcha_area{
+  margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .bg{
+    height: 100%;
+    width: auto;
+    left: 50%;
+    margin-left: -50%;
+  }
+  p{
+    text-align: left;
+  }
+}
